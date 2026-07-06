@@ -4,254 +4,221 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>CoreMotion</title>
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
+<!-- ===========================
+SIDEBAR
+=========================== -->
 
-<nav class="navbar">
+<aside id="sidebar" class="sidebar collapsed">
 
-<div class="container">
+    <div class="sidebar-header">
 
-<a href="#" class="logo">
+        <div class="logo-area">
 
-<div class="logo-box">
-C
-</div>
+            <div class="logo">
 
-<span>CoreMotion</span>
+                C
 
-</a>
-
-<ul class="menu">
-
-<li><a class="active" href="#">Início</a></li>
-<li><a href="#">Mídia</a></li>
-<li><a href="#">Agenda</a></li>
-<li><a href="#">Marketplace</a></li>
-<li><a href="#">Perfil</a></li>
-
-</ul>
-
-<div class="hamburger">
-
-<span></span>
-<span></span>
-<span></span>
-
-</div>
-
-</div>
-
-</nav>
-
-</header>
-
-
-<section class="hero">
-
-<div class="container hero-content">
-
-<div class="hero-left">
-
-<span class="badge">
-    
-Plataforma Esportiva
-</span>
-
-    <section class="features">
-
-    <div class="container">
-
-        <h2>Por que utilizar a CoreMotion?</h2>
-
-        <p class="subtitle">
-            Uma plataforma desenvolvida para conectar atletas, clubes e oportunidades.
-        </p>
-
-        <div class="features-grid">
-
-            <div class="feature-card reveal">
-                <div class="icon">🏆</div>
-                <h3>Competições</h3>
-                <p>
-                    Encontre torneios e campeonatos esportivos em poucos cliques.
-                </p>
             </div>
 
-            <div class="feature-card reveal">
-                <div class="icon">🎥</div>
-                <h3>Mídia</h3>
-                <p>
-                    Compartilhe fotos, vídeos e momentos importantes da sua carreira.
-                </p>
-            </div>
+            <span class="logo-text">
 
-            <div class="feature-card reveal">
-                <div class="icon">📅</div>
-                <h3>Agenda</h3>
-                <p>
-                    Organize treinamentos, jogos e eventos esportivos.
-                </p>
-            </div>
+                CoreMotion
 
-            <div class="feature-card reveal">
-                <div class="icon">🛒</div>
-                <h3>Marketplace</h3>
-                <p>
-                    Venda e compre materiais esportivos com segurança.
-                </p>
-            </div>
+            </span>
 
         </div>
+
+        <button id="toggleSidebar">
+
+            ❯
+
+        </button>
 
     </div>
 
-</section>
+
+    <nav>
+
+        <ul>
+
+            <li class="active">
+
+                <a href="index.html">
+
+                    <span class="icon">🏠</span>
+
+                    <span class="text">
+
+                        Início
+
+                    </span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="news.html">
+
+                    <span class="icon">📰</span>
+
+                    <span class="text">
+
+                        Notícias
+
+                    </span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="media.html">
+
+                    <span class="icon">🎬</span>
+
+                    <span class="text">
+
+                        Mídia
+
+                    </span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="agenda.html">
+
+                    <span class="icon">📅</span>
+
+                    <span class="text">
+
+                        Agenda
+
+                    </span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="marketplace.html">
+
+                    <span class="icon">🛍️</span>
+
+                    <span class="text">
+
+                        Marketplace
+
+                    </span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="profile.html">
+
+                    <span class="icon">👤</span>
+
+                    <span class="text">
+
+                        Perfil
+
+                    </span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="settings.html">
+
+                    <span class="icon">⚙️</span>
+
+                    <span class="text">
+
+                        Configurações
+
+                    </span>
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
 
 
-<section class="stats">
+    <div class="sidebar-footer">
 
-    <div class="container">
+        <button id="logout">
 
-        <div class="stat reveal">
-            <h2>18K+</h2>
-            <span>Usuários</span>
-        </div>
+            <span class="icon">
 
-        <div class="stat reveal">
-            <h2>950+</h2>
-            <span>Eventos</span>
-        </div>
+                🚪
 
-        <div class="stat reveal">
-            <h2>250+</h2>
-            <span>Clubes</span>
-        </div>
+            </span>
 
-        <div class="stat reveal">
-            <h2>99%</h2>
-            <span>Satisfação</span>
-        </div>
+            <span class="text">
+
+                Sair
+
+            </span>
+
+        </button>
 
     </div>
 
-</section>
+</aside>
 
+<!-- ===========================
+MAIN
+=========================== -->
 
-<footer>
+<main id="content">
 
-<div class="container footer-content">
+    <!-- Hero será convertido na Parte 2 -->
 
-<div>
+    <section id="hero"></section>
 
-<h3>CoreMotion</h3>
+    <!-- Notícias -->
 
-<p>
-A velocidade da notícia.
-A paixão pelo esporte.
-</p>
+    <section id="news"></section>
 
-</div>
+    <!-- Painel lateral -->
 
-<div>
+    <section id="dashboard"></section>
 
-<h4>Navegação</h4>
+</main>
 
-<a href="#">Início</a>
-<a href="#">Agenda</a>
-<a href="#">Marketplace</a>
-
-</div>
-
-<div>
-
-<h4>Contato</h4>
-
-<p>contato@coremotion.com</p>
-
-</div>
-
-</div>
-
-</footer>
-    
-<h1>
-
-Conectando atletas, equipes e oportunidades.
-
-</h1>
-
-<p>
-
-Gerencie sua carreira esportiva, acompanhe notícias,
-eventos e conecte-se ao maior ecossistema esportivo
-digital.
-
-</p>
-
-<div class="buttons">
-
-<a href="#" class="btn-primary">
-Começar Agora
-</a>
-
-<a href="#" class="btn-secondary">
-Saiba Mais
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<div class="circle"></div>
-
-<div class="card">
-
-<h2>+18.000</h2>
-
-<p>Usuários ativos</p>
-
-</div>
-
-<div class="card">
-
-<h2>950</h2>
-
-<p>Eventos cadastrados</p>
-
-</div>
-
-<div class="card">
-
-<h2>100%</h2>
-
-<p>Experiência Responsiva</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<script src="js/app.js"></script>
+<script src="js/sidebar.js"></script>
 
 </body>
 
 </html>
-
